@@ -1,0 +1,58 @@
+/*circulo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#comienzo{
+    width: 300px;
+}
+
+    #personaje{
+        position: absolute;
+        background-color: yellowgreen;
+        width: 125px;
+        margin-left: 10px;
+        bottom: 350px;
+       
+    }
+body {
+       position: relative;
+       background-image: url(../img/minecraft_background__grass__by_jabjabjab_d30egxg-fullview.jpg);
+       background-repeat: repeat-x;
+       height: 600px;
+       }
+
+
+ #playerd{
+    position: absolute;
+    z-index: 2;
+       }
+
+
+
+#playeriz{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    
+  }
+  @keyframes playerjump {
+    0%{bottom: 350px;
+    }
+    55% {bottom: 500px;}
+    
+  }
+  .playerjump{
+    animation: playerjump 1s;
+
+  }
+
+ 
